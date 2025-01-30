@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Técnico - Projeto E-doc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f4f4f4; /* Cor de fundo opcional */
+        }
+
+        .content {
+            width: 80%; /* Ajuste a largura conforme necessário */
+            max-width: 900px; /* Largura máxima para não esticar demais em telas grandes */
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Documento Técnico - Projeto E-doc</h1>
+
+        <h2>1. Nome do Projeto:</h2>
+        <p>E-doc</p>
+
+        <h2>2. Público Alvo:</h2>
+        <p>Microempresas</p>
+
+        <h2>3. Problema:</h2>
+        <p>As microempresas enfrentam dificuldades em unificar documentos, como notas fiscais e ordens de serviço, em um formato padrão e organizado.</p>
+
+        <h2>4. Solução:</h2>
+        <p>Desenvolver um programa denominado E-doc, que permita a unificação desses documentos em um único formato eletrônico, denominado Documento Eletrônico. Este sistema permitirá que as microempresas centralizem e organizem seus documentos de maneira mais eficiente, simplificando o processo de armazenamento e acesso.</p>
+
+        <h2>5. Tecnologias Utilizadas:</h2>
+        <ul>
+            <li><strong>Linguagem de Programação:</strong> C#</li>
+            <li><strong>Plataforma:</strong> Windows</li>
+        </ul>
+
+        <h2>6. Monetização:</h2>
+        <p>O modelo de monetização será baseado em suporte anual para manutenção e atualizações do sistema.</p>
+
+        <h2>7. Requisitos Não Funcionais:</h2>
+        <ul>
+            <li><strong>Usabilidade:</strong> O sistema deve ser simples de usar, com uma interface amigável, permitindo que microempresas utilizem o programa sem dificuldades.</li>
+            <li><strong>Segurança:</strong> Garantir que todos os documentos e informações estejam protegidos contra acessos não autorizados.</li>
+            <li><strong>Confiabilidade:</strong> O sistema deve ser estável, com mínima possibilidade de falhas ou perdas de dados.</li>
+        </ul>
+
+        <h2>8. Requisitos Funcionais:</h2>
+        <ul>
+            <li><strong>Cadastro de Documentos:</strong> O sistema deve permitir o cadastro de diferentes tipos de documentos, como notas fiscais e ordens de serviço.</li>
+            <li><strong>Geração de PDF:</strong> O sistema deverá gerar e salvar os documentos em formato PDF, proporcionando fácil visualização e compartilhamento.</li>
+        </ul>
+
+        <h2>9. UML - Caso de Uso:</h2>
+        <p><strong>Ator Principal:</strong> Usuário (Responsável pelo cadastro de documentos)</p>
+        <p><strong>Caso de Uso Principal:</strong></p>
+        <ul>
+            <li>O usuário faz login no sistema.</li>
+            <li>O usuário seleciona a opção de cadastrar um novo documento.</li>
+            <li>O sistema solicita as informações necessárias para o cadastro (tipo de documento, dados, etc.).</li>
+            <li>O sistema gera o documento eletrônico (PDF) e armazena.</li>
+            <li>O sistema confirma o cadastro bem-sucedido.</li>
+        </ul>
+        <p><strong>Casos de Uso Secundários:</strong></p>
+        <ul>
+            <li>Consultar documentos cadastrados.</li>
+            <li>Excluir documentos.</li>
+            <li>Gerar relatórios de documentos.</li>
+        </ul>
+
+        <h2>10. Requisitos de Classes:</h2>
+        <p><strong>Banco de Dados:</strong> A estrutura do banco de dados deve ser capaz de armazenar dados dos documentos cadastrados, como tipo de documento, informações relacionadas, data de cadastro, etc.</p>
+        <p><strong>Funções:</strong></p>
+        <ul>
+            <li><strong>CadastroDocumento():</strong> Função responsável por cadastrar documentos no banco de dados.</li>
+            <li><strong>GerarPDF():</strong> Função para gerar o arquivo PDF do documento cadastrado.</li>
+            <li><strong>ConsultarDocumentos():</strong> Função para listar documentos cadastrados.</li>
+            <li><strong>ExcluirDocumento():</strong> Função para excluir um documento do sistema.</li>
+            <li><strong>GerarRelatorio():</strong> Função para gerar relatórios dos documentos armazenados.</li>
+        </ul>
+    </div>
+</body>
+</html>
