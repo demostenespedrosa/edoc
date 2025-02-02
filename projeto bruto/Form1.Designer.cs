@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
+            btnCriarDocumento = new Button();
             SuspendLayout();
             // 
             // label1
@@ -59,17 +59,17 @@
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.Click += label2_Click;
             // 
-            // button1
+            // btnCriarDocumento
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(348, 374);
-            button1.Name = "button1";
-            button1.Size = new Size(110, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Criar Documento";
-            button1.TextAlign = ContentAlignment.BottomCenter;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnCriarDocumento.Anchor = AnchorStyles.None;
+            btnCriarDocumento.Location = new Point(348, 374);
+            btnCriarDocumento.Name = "btnCriarDocumento";
+            btnCriarDocumento.Size = new Size(110, 23);
+            btnCriarDocumento.TabIndex = 2;
+            btnCriarDocumento.Text = "Criar Documento";
+            btnCriarDocumento.TextAlign = ContentAlignment.BottomCenter;
+            btnCriarDocumento.UseVisualStyleBackColor = true;
+            btnCriarDocumento.Click += btnCriarDocumento_Click;
             // 
             // Form1
             // 
@@ -77,7 +77,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btnCriarDocumento);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -91,6 +91,6 @@
 
         private Label label1;
         private Label label2;
-        private Button button1;
+        private Button btnCriarDocumento;
     }
 }

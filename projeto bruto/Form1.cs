@@ -1,3 +1,5 @@
+using E_Doc;
+
 namespace e_doc
 {
     public partial class Form1 : Form
@@ -26,5 +28,18 @@ namespace e_doc
         {
 
         }
+
+        private void btnCriarDocumento_Click(object sender, EventArgs e)
+        {
+            // Cria a instância do FormDocumento e exibe como modal
+            using (FormDocumento formDocumento = new FormDocumento())
+            {
+                formDocumento.ShowDialog();  // Exibe de forma modal
+            }
+
+            this.Hide(); // Oculta o Form1 após o fechamento do FormDocumento
+        }
+
+
     }
 }
