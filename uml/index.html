@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-doc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>e-doc</h1>
+        <p>Seja bem vindo ao UML oficial do projeto e-doc</p>
+        <p>Diagrama de Classes UML (Detalhado)</p>
+        <pre>
++-------------------+
+|   EDocApp         |
+|-------------------|
+         |
+         v
++---------------------+
+|   PaginaInicial     |
+|---------------------|
+| + btnCriarDoc()     |
++---------------------+
+         |
+         v
++--------------------------------+
+|   DocumentoFiscal              |
+|--------------------------------|
+| - txtNomeCliente               |
+| - txtCnpjCliente               |
+| - txtEndereco                  |
+| - txtTelefoneCliente           |
+| - txtServicoProduto            |
+| - txtValor                     |
+| - txtData                      |
+| - txtNumeroOrcamento           |
+| - txtNomeEmpresa               |
+| - txtTelefoneEmpresa           |
+| - txtCNPJEmpresa               |
+|--------------------------------|
+| + btnMostrarTxt()              |
+| + btnLimparDados()             |
++--------------------------------+
+        </pre>
+    </div>
+</body>
+</html>
