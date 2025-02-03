@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-doc</title>
+    <title>e-doc (uml)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,9 +24,11 @@
             width: 80%;
             max-width: 600px;
         }
-        h1 {
-            color: #333;
-            text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
         pre {
             background-color: #f8f9fa;
@@ -40,19 +42,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>e-doc</h1>
-        <p>Seja bem vindo ao UML oficial do projeto e-doc</p>
-        <p>Diagrama de Classes UML (Detalhado)</p>
+        <!-- Substituindo o título por uma foto -->
+        <img src="logo.png" alt="Logo e-doc">
+        
+        <p>Seja bem-vindo(a) a uml oficial do projeto e-doc! aqui você irá conhecer</p>
+        <p>como que funciona a interface do sistema por meio de um diagrama de classes. </p>
         <pre>
 +-------------------+
-|   EDocApp         |
+|   EDocApp        |
 |-------------------|
+| + Main()         |
++-------------------+
          |
          v
 +---------------------+
-|   PaginaInicial     |
+|   PaginaInicial    |
 |---------------------|
-| + btnCriarDoc()     |
+| + btnCriarDoc()    |
 +---------------------+
          |
          v
