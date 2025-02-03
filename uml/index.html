@@ -29,6 +29,7 @@
             margin: 0 auto;
             max-width: 100%;
             height: auto;
+            object-fit: contain; /* Garante que a imagem não seja cortada */
         }
         pre {
             background-color: #f8f9fa;
@@ -48,38 +49,45 @@
         <p>Seja bem-vindo(a) a uml oficial do projeto e-doc! aqui você irá conhecer</p>
         <p>como que funciona a interface do sistema por meio de um diagrama de classes. </p>
         <pre>
-+-------------------+
-|   EDocApp        |
-|-------------------|
-| + Main()         |
-+-------------------+
-         |
-         v
-+---------------------+
-|   PaginaInicial    |
-|---------------------|
-| + btnCriarDoc()    |
-+---------------------+
-         |
-         v
-+--------------------------------+
-|   DocumentoFiscal              |
-|--------------------------------|
-| - txtNomeCliente               |
-| - txtCnpjCliente               |
-| - txtEndereco                  |
-| - txtTelefoneCliente           |
-| - txtServicoProduto            |
-| - txtValor                     |
-| - txtData                      |
-| - txtNumeroOrcamento           |
-| - txtNomeEmpresa               |
-| - txtTelefoneEmpresa           |
-| - txtCNPJEmpresa               |
-|--------------------------------|
-| + btnMostrarTxt()              |
-| + btnLimparDados()             |
-+--------------------------------+
+            +-------------------------------+
+            |    TelaInicial                |
+            +-------------------------------+
+            | - btnCriarDocumento: Button   |
+            +-------------------------------+
+            | + btnCriarDocumento_Click()   |
+            +-------------------------------+
+                     |
+                     v
+            +-------------------------------+
+            |    FormDocumento              |
+            +-------------------------------+
+            | - txtNomeCliente: TextBox     |
+            | - txtCnpjCliente: TextBox     |
+            | - txtEndereco: TextBox        |
+            | - txtTelefoneCliente: TextBox |
+            | - txtServicoProduto: TextBox  |
+            | - txtValor: TextBox           |
+            | - txtData: TextBox            |
+            | - txtNumeroOrcamento: TextBox |
+            | - txtNomeEmpresa: TextBox     |
+            | - txtCNPJEmpresa: TextBox     |
+            | - txtTelefoneEmpresa: TextBox |
+            | - btnMostrarTxt: Button       |
+            | - btnLimparDados: Button      |
+            +-------------------------------+
+            | + btnMostrarTxt_Click()       |
+            | + btnLimparDados_Click()      |
+            +-------------------------------+
+                     |
+                     v
+            +-------------------------------+
+            |   DocumentoFiscal             |
+            +-------------------------------+
+            | - caminhoArquivo: string      |
+            +-------------------------------+
+            | + GerarDocumento(): void      |
+            | + LimparDados(): void         |
+            +-------------------------------+
         </pre>
     </div>
 </body>
