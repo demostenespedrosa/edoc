@@ -9,11 +9,12 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Adicionado padding para evitar que o conteúdo encoste nas bordas */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Alinhar no topo para permitir rolagem */
+            min-height: 100vh; /* Garantir que o body ocupe pelo menos a altura da tela */
+            box-sizing: border-box; /* Incluir padding no cálculo da altura */
         }
         .container {
             background-color: #fff;
@@ -21,8 +22,9 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: left;
-            width: 80%;
-            max-width: 600px;
+            width: 90%; /* Largura maior para melhor aproveitamento do espaço */
+            max-width: 800px; /* Aumentei o máximo para caber mais conteúdo */
+            margin: 20px 0; /* Espaçamento vertical */
         }
         img {
             display: block;
@@ -36,8 +38,10 @@
             padding: 15px;
             border-radius: 5px;
             border: 1px solid #ddd;
-            overflow-x: auto;
+            overflow-x: auto; /* Rolagem horizontal se o conteúdo for muito largo */
             font-family: "Courier New", Courier, monospace;
+            white-space: pre-wrap; /* Preserva a formatação, mas quebra linhas longas */
+            word-wrap: break-word; /* Quebra palavras longas */
         }
     </style>
 </head>
@@ -46,8 +50,11 @@
         <!-- Substituindo o título por uma foto -->
         <img src="logo.png" alt="Logo e-doc">
         
-        <p>Seja bem-vindo(a) a uml oficial do projeto e-doc! aqui você irá conhecer</p>
-        <p>como que funciona a interface do sistema por meio de um diagrama de classes. </p>
+        <p> "e-doc" é um aplicativo desenvolvido em C# com o objetivo de automatizar a geração de documentos fiscais, que combina a funcionalidade de uma nota fiscal e uma ordem de serviço. Sua interface gráfica simples e intuitiva foi projetada para facilitar a criação e visualização de documentos fiscais, especialmente voltados para pequenas empresas ou prestadores de serviço.
+
+            A aplicação conta com uma página inicial que apresenta o botão "Criar Documento", levando o usuário a um formulário de preenchimento. O formulário coleta informações essenciais, como dados do cliente, valores de serviço/produto, endereço, números de identificação fiscal e dados da empresa. Ao finalizar o preenchimento, os dados são transformados em um arquivo .txt para posterior impressão e conversão em pdf, com a opção de visualizar o conteúdo diretamente na aplicação por meio do botão "Mostrar TXT".
+            
+            Além disso, o projeto é estruturado de maneira modular, facilitando futuras expansões ou personalizações, e tem como foco a experiência do usuário, sendo uma solução prática e eficiente para a geração de documentos fiscais no contexto brasileiro.
         <pre>
             +-------------------------------+
             |    TelaInicial                |
