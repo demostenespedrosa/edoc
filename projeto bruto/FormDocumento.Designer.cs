@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDocumento));
             label1 = new Label();
             label2 = new Label();
             txtNomeCliente = new TextBox();
@@ -301,8 +302,10 @@
             Controls.Add(label12);
             Controls.Add(txtCNPJEmpresa);
             Controls.Add(btnMostrarTxt);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormDocumento";
             Text = "Documento Fiscal";
+            Load += FormDocumento_Load;
             ResumeLayout(false);
             PerformLayout();
         }

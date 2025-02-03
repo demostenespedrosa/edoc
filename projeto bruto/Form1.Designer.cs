@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             btnCriarDocumento = new Button();
@@ -82,8 +83,9 @@
             Controls.Add(btnCriarDocumento);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Tela Inicial";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

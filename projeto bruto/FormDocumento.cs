@@ -112,5 +112,10 @@ namespace E_Doc
         {
 
         }
+
+        private void FormDocumento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
