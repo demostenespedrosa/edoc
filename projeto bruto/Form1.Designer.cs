@@ -37,8 +37,9 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Bahnschrift", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(301, 200);
+            label1.Location = new Point(542, 223);
             label1.Name = "label1";
             label1.Size = new Size(223, 77);
             label1.TabIndex = 0;
@@ -50,8 +51,9 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Bahnschrift", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(86, 277);
+            label2.Location = new Point(327, 300);
             label2.Name = "label2";
             label2.Size = new Size(654, 45);
             label2.TabIndex = 1;
@@ -62,9 +64,9 @@
             // btnCriarDocumento
             // 
             btnCriarDocumento.Anchor = AnchorStyles.None;
-            btnCriarDocumento.Location = new Point(348, 374);
+            btnCriarDocumento.Location = new Point(583, 426);
             btnCriarDocumento.Name = "btnCriarDocumento";
-            btnCriarDocumento.Size = new Size(110, 23);
+            btnCriarDocumento.Size = new Size(134, 21);
             btnCriarDocumento.TabIndex = 2;
             btnCriarDocumento.Text = "Criar Documento";
             btnCriarDocumento.TextAlign = ContentAlignment.BottomCenter;
@@ -76,7 +78,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1283, 497);
             Controls.Add(btnCriarDocumento);
             Controls.Add(label2);
             Controls.Add(label1);
