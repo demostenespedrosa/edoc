@@ -31,7 +31,7 @@ O E-DOC é um aplicativo simples para gerar documentos fiscais combinando caract
 - Para salvar em PDF, clicar em arquivo -> imprimir, e escolher o lugar onde você vai salvar.
 - Para criar um novo documento, clique em "Limpar dados anteriores", que limpará os campos.
 
-- 📌 Roadmap Futuro
+📌 Roadmap Futuro
 
 - Exportação para PDF nativamente
 - Integração com banco de dados
