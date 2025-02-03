@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px; /* Adicionado padding para evitar que o conteúdo encoste nas bordas */
+            padding: 50px; /* Adicionado padding para evitar que o conteúdo encoste nas bordas */
             display: flex;
             justify-content: center;
             align-items: flex-start; /* Alinhar no topo para permitir rolagem */
@@ -18,13 +18,13 @@
         }
         .container {
             background-color: #fff;
-            padding: 20px;
+            padding: 50px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: left;
-            width: 90%; /* Largura maior para melhor aproveitamento do espaço */
-            max-width: 800px; /* Aumentei o máximo para caber mais conteúdo */
-            margin: 20px 0; /* Espaçamento vertical */
+            width:100%; /* Largura maior para melhor aproveitamento do espaço */
+            max-width:1200px; /* Aumentei o máximo para caber mais conteúdo */
+            margin: 40px 0; /* Espaçamento vertical */
         }
         img {
             display: block;
@@ -56,45 +56,54 @@
             
             Além disso, o projeto é estruturado de maneira modular, facilitando futuras expansões ou personalizações, e tem como foco a experiência do usuário, sendo uma solução prática e eficiente para a geração de documentos fiscais no contexto brasileiro.
         <pre>
-            +-------------------------------+
-            |    TelaInicial                |
-            +-------------------------------+
-            | - btnCriarDocumento: Button   |
-            +-------------------------------+
-            | + btnCriarDocumento_Click()   |
-            +-------------------------------+
+            +-------------------+
+            |     EDocApp       |
+            |-------------------|
+            | + Main()         |
+            +-------------------+
                      |
                      v
-            +-------------------------------+
-            |    FormDocumento              |
-            +-------------------------------+
-            | - txtNomeCliente: TextBox     |
-            | - txtCnpjCliente: TextBox     |
-            | - txtEndereco: TextBox        |
-            | - txtTelefoneCliente: TextBox |
-            | - txtServicoProduto: TextBox  |
-            | - txtValor: TextBox           |
-            | - txtData: TextBox            |
-            | - txtNumeroOrcamento: TextBox |
-            | - txtNomeEmpresa: TextBox     |
-            | - txtCNPJEmpresa: TextBox     |
-            | - txtTelefoneEmpresa: TextBox |
-            | - btnMostrarTxt: Button       |
-            | - btnLimparDados: Button      |
-            +-------------------------------+
-            | + btnMostrarTxt_Click()       |
-            | + btnLimparDados_Click()      |
-            +-------------------------------+
+            +-----------------------------+
+            |        PaginaInicial        |
+            |-----------------------------|
+            | + btnCriarDoc_Click()       | --> Abre DocumentoFiscal
+            +-----------------------------+
                      |
                      v
-            +-------------------------------+
-            |   DocumentoFiscal             |
-            +-------------------------------+
-            | - caminhoArquivo: string      |
-            +-------------------------------+
-            | + GerarDocumento(): void      |
-            | + LimparDados(): void         |
-            +-------------------------------+
+            +---------------------------------------------------+
+            |               DocumentoFiscal                     |
+            |---------------------------------------------------|
+            | - txtNomeCliente: TextBox                         |
+            | - txtCnpjCliente: TextBox                         |
+            | - txtEndereco: TextBox                            |
+            | - txtTelefoneCliente: TextBox                     |
+            | - txtServicoProduto: TextBox                      |
+            | - txtValor: TextBox                               |
+            | - txtData: TextBox                                |
+            | - txtNumeroOrcamento: TextBox                     |
+            | - txtNomeEmpresa: TextBox                         |
+            | - txtTelefoneEmpresa: TextBox                     |
+            | - txtCNPJEmpresa: TextBox                         |
+            | - lblTitulo: Label                                |
+            | - lblNomeCliente: Label                           |
+            | - lblCnpjCliente: Label                           |
+            | - lblEndereco: Label                              |
+            | - lblTelefoneCliente: Label                       |
+            | - lblServicoProduto: Label                        |
+            | - lblValor: Label                                 |
+            | - lblData: Label                                  |
+            | - lblNumeroOrcamento: Label                       |
+            | - lblNomeEmpresa: Label                           |
+            | - lblTelefoneEmpresa: Label                       |
+            | - lblCNPJEmpresa: Label                           |
+            |---------------------------------------------------|
+            | + btnMostrarTxt_Click()                           | --> Gera e exibe o arquivo TXT
+            | + btnLimparDados_Click()                          | --> Limpa os campos
+            | + CriarArquivoTxt(): void                         | --> Método para salvar os dados no TXT
+            | + LimparCampos(): void                            | --> Método para limpar os campos
+            +---------------------------------------------------+
+            
+
         </pre>
     </div>
 </body>
