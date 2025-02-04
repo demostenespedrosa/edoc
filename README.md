@@ -88,7 +88,4 @@ Se tiver dúvidas ou sugestões, abra uma **issue** no repositório para discuti
 ## 📜 Licença
 
 Este projeto é distribuído sob a **Licença MIT**. Você pode ver mais detalhes no arquivo [LICENSE](LICENSE).
-
----
-
 Agradecemos por sua visita ao repositório do **E-DOC**. Esperamos que este projeto ajude muitas microempresas a otimizar sua geração de documentos fiscais e aumentar a eficiência no dia a dia!
