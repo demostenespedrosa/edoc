@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOCUMENTO TÉCNICO</title>
+    <title>DOCUMENTO TÉCNICO - E-DOC</title>
     <style>
         body {
-            font-family: Helvetica, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -14,47 +14,85 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            text-align: center;
-            background-color: #f4f4f4; /* Cor de fundo opcional */
+            background-color: #f0f4f8;
+            color: #333;
         }
 
         .content {
-            width: 80%; /* Ajuste a largura conforme necessário */
-            max-width: 900px; /* Largura máxima para não esticar demais em telas grandes */
+            width: 90%;
+            max-width: 1000px;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
-        
-        .button {
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-            background-color: #2c528a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #45a049;
-        }
-        
+
         h1 {
-            color: #2c528a
+            font-size: 32px;
+            color: #2c528a;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         h2 {
-            color: #4ca8af;
+            color: #3a79a1;
+            font-size: 24px;
+            margin-top: 30px;
         }
 
         p {
-            text-align: justify;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
         }
 
         ul {
-            text-align: left;
             padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #2c528a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #2c528a;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -62,84 +100,99 @@
     <div class="content">
         <h1>DOCUMENTO TÉCNICO - E-DOC</h1>
 
-        <h2>1. Nome do Projeto:</h2>
-        <p>E-Doc</p>
+        <div class="section">
+            <h2>1. Nome do Projeto:</h2>
+            <p>E-Doc</p>
+        </div>
 
-        <h2>2. Público Alvo:</h2>
-        <p>Micro-empresas</p>
+        <div class="section">
+            <h2>2. Público Alvo:</h2>
+            <p>Microempresas</p>
+        </div>
 
-        <h2>3. Problema:</h2>
-        <p>As microempresas enfrentam dificuldades em unificar documentos, como notas fiscais e ordens de serviço, em um formato padrão e organizado.</p>
+        <div class="section">
+            <h2>3. Problema:</h2>
+            <p>As microempresas enfrentam dificuldades em unificar documentos, como notas fiscais e ordens de serviço, em um formato padrão e organizado.</p>
+        </div>
 
-        <h2>4. Solução:</h2>
-        <p>Desenvolver um programa denominado E-Doc, que permita a unificação desses documentos em um único formato eletrônico, denominado Documento Eletrônico. Este sistema permitirá que as microempresas centralizem e organizem seus documentos de maneira mais eficiente, simplificando o processo de armazenamento e acesso.</p>
+        <div class="section">
+            <h2>4. Solução:</h2>
+            <p>Desenvolver o E-Doc, um sistema para unificar esses documentos em um formato eletrônico, simplificando o processo de armazenamento e acesso.</p>
+        </div>
 
-        <h2>5. Tecnologias Utilizadas:</h2>
-        <ul>
-            <li><strong>Linguagem de Programação:</strong> C# & HTML</li>
-            <li><strong>Plataforma:</strong> Windows</li>
-        </ul>
+        <div class="section">
+            <h2>5. Tecnologias Utilizadas:</h2>
+            <ul>
+                <li><strong>Linguagem de Programação:</strong> C# & HTML</li>
+                <li><strong>Plataforma:</strong> Windows</li>
+            </ul>
+        </div>
 
-        <h2>6. Monetização:</h2>
-        <p>O modelo de monetização será baseado em suporte anual para manutenção e atualizações do sistema.</p>
+        <div class="section">
+            <h2>6. Monetização:</h2>
+            <p>Modelo baseado em suporte anual para manutenção e atualizações do sistema.</p>
+        </div>
 
-        <h2>7. Requisitos Não Funcionais:</h2>
-        <ul>
-            <li><strong>Usabilidade:</strong> O sistema deve ser simples de usar, com uma interface amigável, permitindo que microempresas utilizem o programa sem dificuldades.</li>
-            <li><strong>Confiabilidade:</strong> O sistema deve ser estável, com mínima possibilidade de falhas ou perdas de dados.</li>
-        </ul>
+        <div class="section">
+            <h2>7. Requisitos Não Funcionais:</h2>
+            <ul>
+                <li><strong>Usabilidade:</strong> Interface amigável e intuitiva.</li>
+                <li><strong>Confiabilidade:</strong> Sistema estável e seguro.</li>
+            </ul>
+        </div>
 
-        <h2>8. Requisitos Funcionais:</h2>
-        <ul>
-            <li><strong>Cadastro de Documentos:</strong> O sistema deve permitir o cadastro de diferentes tipos de documentos, como notas fiscais e ordens de serviço.</li>
-            <li><strong>Geração de PDF:</strong> O sistema deverá gerar um arquivo de texto para poder salvar os documentos em formato PDF, proporcionando fácil visualização e compartilhamento.</li>
-        </ul>
+        <div class="section">
+            <h2>8. Requisitos Funcionais:</h2>
+            <ul>
+                <li><strong>Cadastro de Documentos:</strong> Permitir o cadastro de notas fiscais e ordens de serviço.</li>
+                <li><strong>Geração de PDF:</strong> Gerar arquivos PDF de documentos cadastrados.</li>
+            </ul>
+        </div>
 
-        <h2>9. UML - Caso de Uso:</h2>
-        <a href="umlreference.html"
-            <button class="button">Conheça já nossa UML.</button>
+        <div class="section">
+            <h2>9. UML - Caso de Uso:</h2>
+            <a href="umlreference.html">
+                <button class="button">Conheça já nossa UML</button>
             </a>
-        </ul>
+        </div>
 
-        <h2>10. Requisitos de Classes:</h2>
-        <p><strong>Banco de Dados:</strong> A estrutura do banco de dados deve ser capaz de armazenar dados dos documentos cadastrados, como tipo de documento, informações relacionadas, data de cadastro, etc.</p>
-        <p><strong>Funções:</strong></p>
-        <ul>
-            <li><strong>Criar Documento():</strong> Função responsável por abrir o formulário.</li>
-            <li><strong>Abrir TXT():</strong> Função para gerar o arquivo do documento cadastrado.</li>
-            <li><strong>Limpar dados anteriores():</strong> Função para apagar os dados documento do anterior cadastrados.</li>
-        </ul>
+        <div class="section">
+            <h2>10. Requisitos de Classes:</h2>
+            <p><strong>Banco de Dados:</strong> Estrutura para armazenar dados dos documentos cadastrados.</p>
+            <ul>
+                <li><strong>Criar Documento():</strong> Função para abrir o formulário de criação de documento.</li>
+                <li><strong>Abrir TXT():</strong> Gera o arquivo .txt com os dados inseridos.</li>
+                <li><strong>Limpar dados anteriores():</strong> Limpa os dados preenchidos.</li>
+            </ul>
+        </div>
 
-        <h2>11. Estrutura do projeto:</h2>
-        <ul>
-        <li><strong>O projeto é composto por dois formulários principais:</strong></li>
-        <li><strong>Form1 (Tela Inicial)</strong></li>
-        Apresenta a interface inicial do sistema.
-        Contém um botão Criar Documento que redireciona o usuário para o formulário de criação do documento fiscal.
-        <li><strong>FormDocumento (Documento Fiscal)</strong></li>
-        Contém os campos para inserção de informações do documento.
-        Inclui dois botões:
-        Mostrar TXT: Exibe o conteúdo do arquivo .txt gerado.
-        Limpar dados anteriores: Permite reiniciar o preenchimento do documento.
-        </ul>
+        <div class="section">
+            <h2>11. Estrutura do Projeto:</h2>
+            <ul>
+                <li><strong>Form1 (Tela Inicial):</strong> Tela de entrada com botão para criar documento.</li>
+                <li><strong>FormDocumento (Documento Fiscal):</strong> Tela de preenchimento dos dados do documento.</li>
+            </ul>
+        </div>
 
-        <h2>12. Funcionamento do aplicativo:</h2>
-        <ul>
-        <li>O usuário abre o aplicativo e vê a Tela Inicial.</li>
-        <li>Clica em Criar Documento para acessar o FormDocumento.</li>
-        <li>Insere os dados necessários nos campos.</li>
-        <li>Clica em Mostrar TXT para gerar e visualizar o arquivo de texto com os dados informados.</li>
-        <li>FormDocumento (Documento Fiscal)</li>
-        <li>Se necessário, clica em Limpar dados anteriores para reiniciar o preenchimento do documento.</li>
-        </ul>
+        <div class="section">
+            <h2>12. Funcionamento do Aplicativo:</h2>
+            <ul>
+                <li>Abrir o aplicativo e acessar a Tela Inicial.</li>
+                <li>Clicar em Criar Documento para preencher os dados do documento.</li>
+                <li>Gerar e visualizar o arquivo de texto com os dados inseridos.</li>
+                <li>Salvar e converter em PDF.</li>
+                <li>Limpar dados anteriores, se necessário.</li>
+            </ul>
+        </div>
 
-        <h2>13. Conclusão</h2>
-        <ul>
-            <li><strong>Conclusão</strong></li> O sistema **E-DOC** foi desenvolvido para facilitar a criação e organização de documentos fiscais, combinando as características de uma nota fiscal e uma ordem de serviço. Com uma interface intuitiva e funcional, ele permite que os usuários preencham e armazenem informações de forma simples e eficiente.
+        <div class="section">
+            <h2>13. Conclusão:</h2>
+            <p>O sistema E-DOC facilita a criação e organização de documentos fiscais. Com uma interface intuitiva e funcionalidades práticas, ele torna o processo mais eficiente para microempresas.</p>
+        </div>
 
-            A implementação de botões para exibição do documento gerado e a opção de reiniciar o preenchimento garantem praticidade no uso diário. Além disso, a estrutura modular do projeto possibilita futuras melhorias e expansões conforme as necessidades do usuário.
-            
-            Esse sistema representa um passo inicial para digitalizar e otimizar a documentação de serviços e produtos, oferecendo uma solução acessível e eficaz.
-        </ul>
+        <div class="footer">
+            <p>Desenvolvido por <a href="#">Equipe e-doc - Anderson, Daniel, Fábio, Ricardo & Eduardo</a> | 2025</p>
+        </div>
+    </div>
 </body>
 </html>
