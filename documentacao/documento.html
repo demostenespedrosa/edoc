@@ -92,7 +92,7 @@
         <h2>8. Requisitos Funcionais:</h2>
         <ul>
             <li><strong>Cadastro de Documentos:</strong> O sistema deve permitir o cadastro de diferentes tipos de documentos, como notas fiscais e ordens de serviço.</li>
-            <li><strong>Geração de PDF:</strong> O sistema deverá gerar e salvar os documentos em formato PDF, proporcionando fácil visualização e compartilhamento.</li>
+            <li><strong>Geração de PDF:</strong> O sistema deverá gerar um arquivo de texto para poder salvar os documentos em formato PDF, proporcionando fácil visualização e compartilhamento.</li>
         </ul>
 
         <h2>9. UML - Caso de Uso:</h2>
@@ -105,11 +105,9 @@
         <p><strong>Banco de Dados:</strong> A estrutura do banco de dados deve ser capaz de armazenar dados dos documentos cadastrados, como tipo de documento, informações relacionadas, data de cadastro, etc.</p>
         <p><strong>Funções:</strong></p>
         <ul>
-            <li><strong>CadastroDocumento():</strong> Função responsável por cadastrar documentos no banco de dados.</li>
-            <li><strong>GerarPDF():</strong> Função para gerar o arquivo PDF do documento cadastrado.</li>
-            <li><strong>ConsultarDocumentos():</strong> Função para listar documentos cadastrados.</li>
-            <li><strong>ExcluirDocumento():</strong> Função para excluir um documento do sistema.</li>
-            <li><strong>GerarRelatorio():</strong> Função para gerar relatórios dos documentos armazenados.</li>
+            <li><strong>Criar Documento():</strong> Função responsável por abrir o formulário.</li>
+            <li><strong>Abrir TXT():</strong> Função para gerar o arquivo do documento cadastrado.</li>
+            <li><strong>Limpar dados anteriores():</strong> Função para apagar os dados documento do anterior cadastrados.</li>
         </ul>
     </div>
 </body>
